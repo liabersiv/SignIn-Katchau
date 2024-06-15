@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d8e2dc;
+}
+
+.container{
+    background-color: white;
+    display: flex;
+    width: 500px;
+    height: 420px;
+    padding: 30px;
+    border-radius: 70px;
+    box-shadow: 10px 10px 10px #f0da9e;
+    transition: 0.5;
+}
+
+.container:hover{
+    transition: 0.5;
+    border: 2px solid #f0d792;
+}
+
+.forms{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    padding: 7rem;
+}
+
+.form-header{
+    display: flex;
+    margin-bottom: 40%;
+    justify-content: space-between;
+}
+
+.titulo h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btnSignUp{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btnSignUp button{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid rgba(127, 138, 201, 0.212);
+    background-color: #d8e2dc;
+    border-radius: 12px;
+    padding: 8px 12px;
+    transition: 0.5;
+    cursor: pointer;
+}
+
+.btnSignUp button a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.btnSignUp button:hover{
+    border-radius: 15px;
+    padding: 10px 16px;
+    transition: 0.5;
+    background-color: #ecd490;
+    border: 2px solid #f0ca62;
+}
+
+.form-header h1::after{
+    content: '';
+    display: block;
+    width: 80px;
+    height: 5px    ;
+    margin: 0 auto;
+    background-color: #ffbe0b;
+    position: absolute;
+    border-radius: 25px;
+}
+
+.boxtext{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.caixadetexto{
+    display: flex;
+    width: 20%;
+    padding: 10px;
+    justify-content: center;
+}
+
