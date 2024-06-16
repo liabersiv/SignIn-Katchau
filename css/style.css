@@ -40,8 +40,10 @@ body{
     position: fixed;
     display: flex;
     margin-bottom: 21%;
-    margin-left: 4rem;
-    margin-right: 3rem;
+    margin-left: 0rem;
+    margin-right: 14rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .form-header h1::after{
@@ -93,7 +95,7 @@ body{
 }
 
 .boxtext{
-    margin-top: 20px;
+    margin-top: 0px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -103,7 +105,7 @@ body{
 
 .caixadetexto{
     display: flex;
-    margin-top: 48px;
+    margin-top: 38px;
     height: 2rem;
     padding: 0 20px;
     position: relative;
@@ -112,9 +114,13 @@ body{
 }
 
 label{
+    display: flex;
     color: #f0ca62;
     padding: 0 72px;
     margin: 0 23px;
+    align-items: center;
+    top: 0;
+    left: 0;
 }
 
 input{
@@ -129,23 +135,20 @@ input{
     outline: none;
 }
 
-input:hover{
-    transition: 0.3s ease-in-out;
-    border-radius: 9px;
-    width: 19rem;
+input:focus{
+    transition: 0.5s ease-in-out;
+    border-radius: 15px;
+    width: 18rem;
 }
 
-input:focus,
-input:valid{
-    color: #444444;
-    font-weight: 500;
-    border: 2px solid #ffbb00;
-    transition: 0.2s ease;
+.containerdown{
+    display: flex;
+    flex-direction: column;
 }
 
-input:focus ::placeholder,
-input:valid :placeholder-shown{
-    color: #444444;
-    font-weight: 500;
-    transform: translate(-15px, -16px);
+.faixabaixa{
+    display: inline;
+    justify-content: space-between;
+    align-items: center;
+    
 }
