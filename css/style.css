@@ -28,13 +28,16 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 124px;
+    margin-left: 50%;
+    margin-right: 50%;
 }
 
 .form-header{
     position: fixed;
     display: flex;
     margin-bottom: 20%;
+    margin-right: 50%;
+    margin-left: 50%;
     align-items: center;
     justify-content: center;
 }
@@ -95,7 +98,7 @@ body{
     align-items: center;
     flex-direction: column;
     justify-content: space-between;   
-
+    position: absolute;
 }
 
 .caixadetexto{
@@ -103,15 +106,18 @@ body{
     margin-top: 38px;
     height: 2rem;
     padding: 0 20px;
+    box-sizing: border-box;
     position: relative;
     align-items: center;
     justify-content: center;
 }
 
+
 label[for="email"],
 label [for="pwd"]{
     display: block;
     color: #f0ca62;
+    width: 200%;
     padding: 0 72px;
     margin: 0 23px;
     align-items: center;
@@ -131,6 +137,7 @@ input[type='email']{
     justify-content: center;
     position: absolute;
     outline: none;
+    transition: 0.5s;
 }
 
 input:focus{
@@ -140,42 +147,47 @@ input:focus{
 }
 
 .containerdown{
-    display: block;
+    display: flex;
+    flex-direction: column;
     position: absolute;
     align-items: center;
     justify-content: center;
-    margin-top: 35px;
-    margin-right: 75px;
+    margin-top: 200px;
 }
 
-.rememberlink{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    display: flex;
-    margin-top: 150px;
-    width: 150px;
-    margin-bottom: 12px;
-}
-
-.rememberlink input{
-    padding: 10px;
-    width: 10px;
-    margin-right: 5px;
-}
-
-.termoslink{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+.links{
     display: block;
-}   
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-right: 90px;
+}
 
-.termoslink button{
-    background-color: #393E46;
+.links button{
+    background-color: transparent;
     border: 0;
-}   
+}
 
-.termoslink button a{
-    color: #f8a167;
+.links button a{
+    color: #f77c2a;
+}
+
+.checagem input[type="checkbox"]{
+    width: 10px;
+    background-color: #b64a02;
+}
+
+.checagem input[type="checkbox"] + label{
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked{
+    background-color: #b64a02;
+
+}
+
+.checagem{
+    color: #8f9092;
 }
 
 .btncontinue{
@@ -187,3 +199,9 @@ input:focus{
     position: absolute;
 }
 
+.bi{
+    position: absolute;
+    left: 89px;
+    padding: 20px;
+    transform: translateX(10%);
+}
