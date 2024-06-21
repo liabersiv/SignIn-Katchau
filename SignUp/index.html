@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <title>Sign In</title>
+    <title>Sign Up</title>
 </head>
 
 <body>
@@ -18,14 +18,24 @@
             <div class="forms">
                 <div class="form-header">
                     <div class="titulo">
-                        <h1>Entrar</h1>
+                        <h1>Cadastrar</h1>
                     </div>
                     <div class="btnSignUp">
-                        <button><a href="#">Cadastrar</a></button>
+                        <button><a href="#">Entrar</a></button>
                     </div>
                 </div>
 
                 <div class="boxtext">
+                    <div class="caixadetexto">
+                        <label for="pwd"></label>
+                        <input id="pwd" type="password" name="pwd" placeholder="Primeiro Nome" required>
+                        <div class="icons"><i class="bi bi-lock"></i></div>
+                    </div>
+                    <div class="caixadetexto">
+                        <label for="pwd"></label>
+                        <input id="pwd" type="password" name="pwd" placeholder="Sobrenome" required>
+                        <div class="icons"><i class="bi bi-lock"></i></div>
+                    </div>
                     <div class="caixadetexto">
                         <label for="email"></label>
                         <input id="email" type="email" name="email" placeholder="E-mail" required>
@@ -37,6 +47,8 @@
                         <input id="pwd" type="password" name="pwd" placeholder="Senha" required>
                         <div class="icons"><i class="bi bi-lock"></i></div>
                     </div>
+                   
+                    </div>
                 </div>
 
                 <div class="containerdown">
@@ -45,9 +57,6 @@
                             <input class="input_remember" type="checkbox" name="remember" id="rememberme">
                             <label class="label_remember" for="rememberme">Lembrar de mim?</label>
                         </div>
-                    </div>
-                    <div class="links">
-                        <button><a href="#">Esqueceu sua senha?</a></button>
                     </div>
                 </div>
             </div>
