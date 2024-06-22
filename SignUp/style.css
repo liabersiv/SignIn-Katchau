@@ -108,25 +108,17 @@ section {
 
 .boxtext{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+    justify-content: center;
+    flex-direction:row;
+    flex-wrap: wrap;
+}   
 
-.caixadetexto{    
+.caixadetexto{   
     display: flex;
+    justify-content: center;
     padding: 17px;
+    flex-wrap: wrap;
     position: relative;
-}
-
-.caixadetexto label{
-    display: block;
-    color: #f0ca62;
-    width: 200%;
-    padding: 0 150px;
-    margin: 0 23px;
-    align-items: center;
-    top: 0;
-    left: 0;
 }
 
 input{
@@ -178,17 +170,11 @@ input[type='email']{
 }
 
 .checagem input[type="checkbox"]{
-    width: 10px;
-    background-color: #b64a02;
+    width: 12px;
 }
 
 .checagem input[type="checkbox"] + label{
     cursor: pointer;
-}
-
-input[type="checkbox"]:checked{
-    background-color: #b64a02;
-    color: #8f9092;
 }
 
 .btncontinue{
