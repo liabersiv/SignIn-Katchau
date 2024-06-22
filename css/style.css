@@ -91,13 +91,13 @@ section {
     background-color: #fc9856;
     border-radius: 15px;
     padding: 8px 22px;
-    transition: 0.5;
+    transition: 0.5s;
     cursor: pointer;
 }
 
 .btnSignUp button:hover{
     border-radius: 13px;
-    transition: 0.5;
+    transition: 0.5s;
     background-color: #f77c2a;
     border: 2px solid #b64a02;
 }
@@ -188,6 +188,7 @@ input[type='email']{
 
 .links button a{
     color: #f77c2a;
+    font-size: 0.98rem;
 }
 
 .checagem input[type="checkbox"]{
@@ -197,6 +198,8 @@ input[type='email']{
 
 .checagem input[type="checkbox"] + label{
     cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
 }
 
 input[type="checkbox"]:checked{
@@ -218,7 +221,7 @@ input[type="checkbox"]:checked{
     align-items: center;
     justify-content: center;
     padding: 10px 60px;
-    margin-right: 60%;
+    margin-right: 50%;
     background-color: #f8802f;
     border: 1px solid #b64a02;
     border-radius: 7px;
@@ -235,16 +238,19 @@ input[type="checkbox"]:checked{
 
 .btncontinue button:hover{
     transition: 0.5s;
+    margin-right: 47%;
     padding: 10px 74px;
     background-color: rgb(197, 104, 43);
 }
 
-.icons{
+.material-symbols-outlined{
     position: absolute;
     align-items: center;
     justify-content: center;
     margin-left: 215px;
+    color: #555555;
 }
+
 
 .label_remember {
     color: #8f9092;
