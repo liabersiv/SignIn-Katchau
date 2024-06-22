@@ -114,17 +114,15 @@ section {
 
 .caixadetexto{    
     display: flex;
-    flex-wrap: wrap;
     padding: 17px;
     position: relative;
 }
 
-label[for="email"],
-label [for="pwd"]{
+.caixadetexto label{
     display: block;
     color: #f0ca62;
     width: 200%;
-    padding: 0 72px;
+    padding: 0 150px;
     margin: 0 23px;
     align-items: center;
     top: 0;
